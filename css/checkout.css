@@ -1,0 +1,201 @@
+/* Reset some default styles */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Palatino Linotype', serif;
+    background-color: #f7f7f7;
+    color: #000;
+    font-size: 16px;
+}
+
+
+/* Header Styles */
+
+.header {
+    background-color: #6600ff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.link-navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.link-navigation li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.link-navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Main Styles */
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Left View Styles */
+
+.leftView {
+    float: left;
+    width: 50%;
+}
+
+.leftView h3,
+.rightView h3 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+}
+
+leftView form {
+    margin-left: 20px;
+}
+
+leftView form p {
+    font-weight: bold;
+}
+
+leftView hr {
+    width: 200px;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 5px;
+    width: 100%;
+    height: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Palatino Linotype';
+}
+
+input[type="checkbox"] {
+    margin: 10px 0;
+    width: 100%;
+}
+
+input:focus {
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+}
+
+leftView form button i {
+    color: #fff;
+}
+
+leftView form button {
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+/* Right View Styles */
+
+.rightView {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.rightView h3 {
+    color: #6600ff;
+}
+
+rightView hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.descriptionDiv {
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.descriptionDiv img {
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.descriptionDiv .description {
+    flex: 1;
+}
+
+descriptionDiv h4 {
+    color: #333;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+descriptionDiv p {
+    color: #777;
+    margin: 5px 0;
+}
+
+total {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6600ff;
+}
+
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #6600ff;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    footer,
+    main {
+        padding: 10px;
+    }
+}
